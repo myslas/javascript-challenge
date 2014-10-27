@@ -67,7 +67,7 @@ function validateRequiredField(field) {
         var zipRegExp = new RegExp('^\\d{5}$');
         valid = zipRegExp.test(field.value);
     }
-    if (field.name == 'birthdate') {
+    else if (field.name == 'birthdate') {
         var message = document.getElementById('birthdateMessage');
         var date = new Date(field.value);
         var d = new Date();
